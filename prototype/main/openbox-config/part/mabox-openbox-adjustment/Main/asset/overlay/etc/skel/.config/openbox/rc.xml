@@ -345,32 +345,35 @@
 
 
 
-	<!-- ## Launch lxqt-config //-->
+	<!-- ## Launch Appearance Settings //-->
 	<keybind key="A-S-s">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
-				<name>Configuration Center</name>
+				<name>AppearanceSettings</name>
 			</startupnotify>
-			<command>xfce4-settings-manager</command>
+			<command>lxappearance</command>
 		</action>
 	</keybind>
 
 
 
 
-	<!-- ## Launch lxqt-config-appearance //-->
+	<!-- ## Launch Theme Manager //-->
 	<keybind key="A-C-s">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
-				<name>Appearance</name>
+				<name>ThemeManager</name>
 			</startupnotify>
-			<command>xfce4-appearance-settings</command>
+			<command>mb-obthemes</command>
 		</action>
 	</keybind>
 
 
+
+
+	<!--
 	<keybind key="C-Escape">
 		<action name="Execute">
 			<startupnotify>
@@ -380,8 +383,21 @@
 			<command>qps</command>
 		</action>
 	</keybind>
+	//-->
 
 
+
+
+	<!-- ## Launch obconf //-->
+	<keybind key="W-S-s">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>Openbox Configuration Manager</name>
+			</startupnotify>
+			<command>obconf</command>
+		</action>
+	</keybind>
 
 
 
@@ -2068,13 +2084,13 @@ h l
 
 	<keybind key="A-S-comma">
 		<action name="Execute">
-			<command>pamixer -i 2</command>
+			<command>pamixer -d 3</command>
 		</action>
 	</keybind>
 
 	<keybind key="A-S-period">
 		<action name="Execute">
-			<command>pamixer -i 2</command>
+			<command>pamixer -i 3</command>
 		</action>
 	</keybind>
 
@@ -2173,39 +2189,32 @@ h l
 
 
 
+
 	<keybind key="Print">
 		<action name="Execute">
-			<command>ob-screenshot --now</command>
-		</action>
-	</keybind>
-
-
-	<keybind key="W-Print">
-		<action name="Execute">
-			<command>ob-screenshot --win</command>
-		</action>
-	</keybind>
-
-
-	<keybind key="C-Print">
-		<action name="Execute">
-			<command>ob-screenshot --area</command>
+			<command>mb-jgtools screenshot</command>
 		</action>
 	</keybind>
 
 
 	<keybind key="A-Print">
 		<action name="Execute">
-			<command>rofi-screenshot</command>
+			<command>flameshot launcher</command>
 		</action>
 	</keybind>
 
 
 	<keybind key="S-Print">
 		<action name="Execute">
-			<command>ob-screenshot --in5</command>
+			<command>flameshot gui</command>
 		</action>
 	</keybind>
+
+
+
+
+
+
 
 
 

@@ -1,31 +1,34 @@
 
 
-	<!-- ## Launch lxqt-config //-->
+	<!-- ## Launch Appearance Settings //-->
 	<keybind key="A-S-s">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
-				<name>Configuration Center</name>
+				<name>AppearanceSettings</name>
 			</startupnotify>
-			<command>xfce4-settings-manager</command>
+			<command>lxappearance</command>
 		</action>
 	</keybind>
 
 
 
 
-	<!-- ## Launch lxqt-config-appearance //-->
+	<!-- ## Launch Theme Manager //-->
 	<keybind key="A-C-s">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
-				<name>Appearance</name>
+				<name>ThemeManager</name>
 			</startupnotify>
-			<command>xfce4-appearance-settings</command>
+			<command>mb-obthemes</command>
 		</action>
 	</keybind>
 
 
+
+
+	<!--
 	<keybind key="C-Escape">
 		<action name="Execute">
 			<startupnotify>
@@ -35,12 +38,13 @@
 			<command>qps</command>
 		</action>
 	</keybind>
+	//-->
 
 
-<?php
-/*
+
+
 	<!-- ## Launch obconf //-->
-	<keybind key="A-S-s">
+	<keybind key="W-S-s">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
@@ -49,8 +53,6 @@
 			<command>obconf</command>
 		</action>
 	</keybind>
-*/
-?>
 
 
 
@@ -58,7 +60,7 @@
 <?php
 /*
 	<!-- ## Launch obconf-qt //-->
-	<keybind key="A-S-s">
+	<keybind key="W-S-s">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
