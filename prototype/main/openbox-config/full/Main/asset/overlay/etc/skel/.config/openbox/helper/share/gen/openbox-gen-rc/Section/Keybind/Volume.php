@@ -108,13 +108,13 @@
 
 	<keybind key="A-S-comma">
 		<action name="Execute">
-			<command>pamixer -i 2</command>
+			<command>pamixer -d 3</command>
 		</action>
 	</keybind>
 
 	<keybind key="A-S-period">
 		<action name="Execute">
-			<command>pamixer -i 2</command>
+			<command>pamixer -i 3</command>
 		</action>
 	</keybind>
 

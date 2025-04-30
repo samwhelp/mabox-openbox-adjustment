@@ -1,4 +1,31 @@
 
+
+	<keybind key="Print">
+		<action name="Execute">
+			<command>mb-jgtools screenshot</command>
+		</action>
+	</keybind>
+
+
+	<keybind key="A-Print">
+		<action name="Execute">
+			<command>flameshot launcher</command>
+		</action>
+	</keybind>
+
+
+	<keybind key="S-Print">
+		<action name="Execute">
+			<command>flameshot gui</command>
+		</action>
+	</keybind>
+
+
+
+
+<?php
+/*
+
 	<keybind key="Print">
 		<action name="Execute">
 			<command>ob-screenshot --now</command>
@@ -32,6 +59,11 @@
 			<command>ob-screenshot --in5</command>
 		</action>
 	</keybind>
+
+*/
+?>
+
+
 
 
 <?php
