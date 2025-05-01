@@ -11,7 +11,7 @@ border_width = 0
 border_sides = TBLR
 border_content_tint_weight = 0
 background_content_tint_weight = 0
-background_color = #151515 100
+background_color = #282a36 100
 border_color = #000000 0
 background_color_hover = #000000 0
 border_color_hover = #000000 0
@@ -24,9 +24,9 @@ border_width = 0
 border_sides = 
 border_content_tint_weight = 0
 background_content_tint_weight = 0
-background_color = #202020 100
+background_color = #44475a 100
 border_color = #000000 0
-background_color_hover = #202020 100
+background_color_hover = #282a36 100
 border_color_hover = #000000 0
 background_color_pressed = #202020 100
 border_color_pressed = #000000 0
@@ -84,7 +84,7 @@ panel_background_id = 5
 wm_menu = 1
 panel_dock = 0
 panel_pivot_struts = 0
-panel_position = center left vertical
+panel_position = center right vertical
 panel_layer = top
 panel_monitor = all
 panel_shrink = 1
@@ -147,7 +147,7 @@ task_active_background_id = 3
 task_iconified_background_id = 0
 mouse_left = toggle_iconify
 mouse_middle = close
-mouse_right = maximize_restore
+mouse_right = close
 mouse_scroll_up = next_task
 mouse_scroll_down = prev_task
 
@@ -178,19 +178,16 @@ launcher_apps_dir = ~/.config/tint2/launcherapps
 # Clock
 time1_format = %H:%M:%S
 #time2_format = %A %Y-%m-%d
-#time2_format = %A %Y-%m-%d
 time1_font = Rubik 16
-#time1_font = Rubik 8
-#time2_font = Rubik 8
-time1_timezone =
-time2_timezone =
-clock_font_color = #d4be98 100
-clock_padding = 2 0
+time1_timezone = 
+time2_timezone = 
+clock_font_color = #d3d8bd 100
+clock_padding = 0 0
 clock_background_id = 0
 clock_tooltip = Today is %A, %Y-%m-%d %H:%M:%S
-clock_tooltip_timezone =
-clock_lclick_command = gsimplecal
-clock_rclick_command = manjaro-settings-manager -m msm_timedate
+clock_tooltip_timezone = 
+clock_lclick_command = 
+clock_rclick_command = jgclock ipc
 clock_mclick_command = 
 clock_uwheel_command = 
 clock_dwheel_command = 
@@ -199,8 +196,8 @@ clock_dwheel_command =
 # Battery
 battery_tooltip = 1
 battery_low_status = 0
-battery_low_cmd = notify-send --urgency=critical "Power Management" "Battery is running low"
-battery_full_cmd = notify-send --urgency=low "Power Management" "Battery is fully charged"
+battery_low_cmd =
+battery_full_cmd =
 battery_font_color = #000000 100
 bat1_format = 
 bat2_format = 
@@ -212,8 +209,8 @@ battery_rclick_command =
 battery_mclick_command = 
 battery_uwheel_command = 
 battery_dwheel_command = 
-ac_connected_cmd = notify-send --urgency=low "Power Management" "Charger connected"
-ac_disconnected_cmd = notify-send --urgency=low "Power Management" "Charger disconnected"
+ac_connected_cmd =
+ac_disconnected_cmd =
 
 #-------------------------------------
 # Button 1
@@ -225,8 +222,8 @@ button_rclick_command =
 button_mclick_command = 
 button_uwheel_command = 
 button_dwheel_command = 
-button_font = feather 12
-button_font_color = #d4be98 100
+button_font = Symbols Nerd Font 14
+button_font_color = #bd93f9 100
 button_padding = 16 9
 button_background_id = 2
 button_centered = 1
