@@ -70,6 +70,7 @@ h l
 
 
 	<!-- win+[, win+] //-->
+	<!--
 	<keybind key="W-bracketleft">
 		<action name="PreviousWindow">
 			<finalactions>
@@ -89,6 +90,7 @@ h l
 			</finalactions>
 		</action>
 	</keybind>
+	//-->
 
 
 	<!-- Alt+Up, Alt+Down //-->
@@ -104,9 +106,6 @@ h l
 	</keybind>
 	//-->
 
-
-
-
 	<!--
 	<keybind key="A-Down">
 		<action name="NextWindow">
@@ -118,8 +117,6 @@ h l
 		</action>
 	</keybind>
 	//-->
-
-
 
 
 	<!-- Alt+Left, Alt+Right //-->
