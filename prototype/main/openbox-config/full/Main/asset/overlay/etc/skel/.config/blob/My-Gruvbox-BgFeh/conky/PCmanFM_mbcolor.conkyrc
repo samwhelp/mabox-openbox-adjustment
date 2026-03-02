@@ -6,12 +6,12 @@ conky.config = {
 	own_window_hints = 'undecorated,below,skip_taskbar,skip_pager,sticky',
 	own_window_colour = '#282828',
 	own_window_class = 'Conky',
-	own_window_title = 'Mabox Shortcuts Conky',
+	own_window_title = 'PCManFM Help Conky',
     
-    alignment = 'bottom_left',
+    alignment = 'top_left',
 	gap_x = 30,
 	gap_y = 60,
-	minimum_width = '200',
+	minimum_width = 200,
 
 -- FONTS
 	use_xft = true,
@@ -28,6 +28,7 @@ conky.config = {
 	default_color = '#665C54',
 	color0 = '#ebdbb2',
     color1 = '#98971a',
+
 
 -- BORDERS
 	draw_borders = true,
@@ -59,38 +60,33 @@ conky.config = {
 -- It is highly recommended to use own window with this one
 -- so double buffer won't be so big.
 	double_buffer = true,
-	update_interval = 2,
+	update_interval = 1,
 };
 
 conky.text = [[
-${color1}RUN${alignr}${color0}super = windows key${voffset -8}
-${color0}${hr 1}${voffset -4}
-${color0}terminal  ${alignr}${color1}super+t
-${color0}quake-terminal  ${alignr}${color1}ctrl+~,F12
-${color0}file manager  ${alignr}${color1}super+f
-${color0}web browser  ${alignr}${color1}super+w
-${color0}text editor  ${alignr}${color1}super+e
-${color0}file search  ${alignr}${color1}super+/
-${color0}galculator  ${alignr}${color1}super+g
-${color0}internet radio  ${alignr}${color1}super+r
-${color0}volume control  ${alignr}${color1}super+v
-${color0}toggle Picom  ${alignr}${color1}super+p
-${color0}toggle Conky  ${alignr}${color1}super+c
-${color0}lock screen  ${alignr}${color1}super+l
-${color0}exit  ${alignr}${color1}super+x
-${color1}WINDOWS ${color0} ${hr 1}${voffset -2}
-${color0}close ${alignr} ${color1}alt+F4
-${color0}iconify ${alignr} ${color1}alt+F5
-${color0}maximize ${alignr} ${color1}alt+F6
-${color0}expose ${alignr} ${color1}super+~
-${color0}show desktop ${alignr} ${color1}super+d
-${color0}un/decorate ${alignr} ${color1}super+b
-${color0}toggle fullscreen ${alignr} ${color1}F11
-${color1}windows placement: 
-${color0} - half screen ${alignr} ${color1}super+arrows
-${color0} - 1/4 screen ${alignr} ${color1}super+numpad[1..9]
-${color1}DESKTOPS ${color0} ${hr 1}${voffset -2}
-${color0}go to desktop ${alignr} ${color1}super+[1..4]
+${color1}PCmanFM - file manager ${alignr}${color0}super+f
+${color1}VIEW ${color0}${hr 1}${voffset -2}
+${color0}Icon View  ${alignr}${color1}ctrl+1
+${color0}Compact View  ${alignr}${color1}ctrl+2
+${color0}Thumbnail View  ${alignr}${color1}ctrl+3
+${color0}Detailed List View  ${alignr}${color1}ctrl+4
+${color0}Show Hidden ${alignr}${color1}ctrl+H
+${color1}GO  ${color0}${hr 1}
+${voffset -2}${color0}Home Dir${alignr}${color1}alt+Home
+${color0}Parent Dir  ${alignr}${color1}alt+Up
+${color0}Previous Dir  ${alignr}${color1}alt+Left
+${color0}Next Dir  ${alignr}${color1}alt+Right
+${color0}Go to Location  ${alignr}${color1}ctrl+L
+${color0}SSH/FTP connect...  ${alignr}${color1}alt+G  C
+${color1}WINDOW  ${color0}${hr 1}
+${voffset -2}${color0}Refresh ${alignr}${color1}F5
+${color0}Dual Pane Mode ${alignr}${color1}F3
+${color0}Status Bar${alignr}${color1}ctrl+B
+${color0}Side Pane ${alignr}${color1}F9
+${color0}---> Places${alignr}${color1}ctrl+6
+${color0}---> Directory Tree ${alignr}${color1}ctrl+7
+${color1}SIZE ${color0}${hr 1}${voffset -2}
+${color0}Zoom In${alignr}${alignr}${color1}ctrl++
+${color0}Zoon Out ${alignr}${color1}ctrl+-
+${color0}Normal Size ${alignr}${color1}ctrl+0
 ]];
-
-
