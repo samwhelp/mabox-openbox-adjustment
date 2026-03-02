@@ -614,6 +614,7 @@ h l
 
 
 	<!-- alt+[, alt+] //-->
+	<!--
 	<keybind key="A-bracketleft">
 		<action name="GoToDesktop">
 			<to>left</to>
@@ -623,69 +624,6 @@ h l
 	<keybind key="A-bracketright">
 		<action name="GoToDesktop">
 			<to>right</to>
-		</action>
-	</keybind>
-
-
-	<!-- For Simple [1-10] //-->
-	<!--
-	<keybind key="A-1">
-		<action name="GoToDesktop">
-			<to>1</to>
-		</action>
-	</keybind>
-
-	<keybind key="A-2">
-		<action name="GoToDesktop">
-			<to>2</to>
-		</action>
-	</keybind>
-
-	<keybind key="A-3">
-		<action name="GoToDesktop">
-			<to>3</to>
-		</action>
-	</keybind>
-
-	<keybind key="A-4">
-		<action name="GoToDesktop">
-			<to>4</to>
-		</action>
-	</keybind>
-
-	<keybind key="A-5">
-		<action name="GoToDesktop">
-			<to>5</to>
-		</action>
-	</keybind>
-
-	<keybind key="A-6">
-		<action name="GoToDesktop">
-			<to>6</to>
-		</action>
-	</keybind>
-
-	<keybind key="A-7">
-		<action name="GoToDesktop">
-			<to>7</to>
-		</action>
-	</keybind>
-
-	<keybind key="A-8">
-		<action name="GoToDesktop">
-			<to>8</to>
-		</action>
-	</keybind>
-
-	<keybind key="A-9">
-		<action name="GoToDesktop">
-			<to>9</to>
-		</action>
-	</keybind>
-
-	<keybind key="A-0">
-		<action name="GoToDesktop">
-			<to>10</to>
 		</action>
 	</keybind>
 	//-->
@@ -746,11 +684,9 @@ h l
 		</action>
 	</keybind>
 
-	<keybind key="A-C-0">
-		<action name="GoToDesktop">
-			<to>10</to>
-		</action>
-	</keybind>
+
+
+
 
 
 
@@ -815,132 +751,6 @@ h l
 
 
 	<!-- For [1-10] //-->
-	<keybind key="W-A-1">
-		<action name="SendToDesktop">
-			<to>1</to>
-		</action>
-	</keybind>
-
-	<keybind key="W-A-2">
-		<action name="SendToDesktop">
-			<to>2</to>
-		</action>
-	</keybind>
-
-	<keybind key="W-A-3">
-		<action name="SendToDesktop">
-			<to>3</to>
-		</action>
-	</keybind>
-
-	<keybind key="W-A-4">
-		<action name="SendToDesktop">
-			<to>4</to>
-		</action>
-	</keybind>
-
-	<keybind key="W-A-5">
-		<action name="SendToDesktop">
-			<to>5</to>
-		</action>
-	</keybind>
-
-	<keybind key="W-A-6">
-		<action name="SendToDesktop">
-			<to>6</to>
-		</action>
-	</keybind>
-
-	<keybind key="W-A-7">
-		<action name="SendToDesktop">
-			<to>7</to>
-		</action>
-	</keybind>
-
-	<keybind key="W-A-8">
-		<action name="SendToDesktop">
-			<to>8</to>
-		</action>
-	</keybind>
-
-	<keybind key="W-A-9">
-		<action name="SendToDesktop">
-			<to>9</to>
-		</action>
-	</keybind>
-
-	<keybind key="W-A-0">
-		<action name="SendToDesktop">
-			<to>10</to>
-		</action>
-	</keybind>
-
-
-	<!-- Simple For Simple [1-10] //-->
-	<!--
-	<keybind key="W-1">
-		<action name="SendToDesktop">
-			<to>1</to>
-		</action>
-	</keybind>
-
-	<keybind key="W-2">
-		<action name="SendToDesktop">
-			<to>2</to>
-		</action>
-	</keybind>
-
-	<keybind key="W-3">
-		<action name="SendToDesktop">
-			<to>3</to>
-		</action>
-	</keybind>
-
-	<keybind key="W-4">
-		<action name="SendToDesktop">
-			<to>4</to>
-		</action>
-	</keybind>
-
-	<keybind key="W-5">
-		<action name="SendToDesktop">
-			<to>5</to>
-		</action>
-	</keybind>
-
-	<keybind key="W-6">
-		<action name="SendToDesktop">
-			<to>6</to>
-		</action>
-	</keybind>
-
-	<keybind key="W-7">
-		<action name="SendToDesktop">
-			<to>7</to>
-		</action>
-	</keybind>
-
-	<keybind key="W-8">
-		<action name="SendToDesktop">
-			<to>8</to>
-		</action>
-	</keybind>
-
-	<keybind key="W-9">
-		<action name="SendToDesktop">
-			<to>9</to>
-		</action>
-	</keybind>
-
-	<keybind key="W-0">
-		<action name="SendToDesktop">
-			<to>10</to>
-		</action>
-	</keybind>
-	//-->
-
-
-	<!-- Simple For [1-10] //-->
 	<keybind key="A-S-1">
 		<action name="SendToDesktop">
 			<to>1</to>
@@ -995,11 +805,10 @@ h l
 		</action>
 	</keybind>
 
-	<keybind key="A-S-0">
-		<action name="SendToDesktop">
-			<to>10</to>
-		</action>
-	</keybind>
+
+
+
+
 
 
 
