@@ -34,8 +34,8 @@ set -u						## treat unset variable as error
 ##
 
 REF_CMD_FILE_NAME="$(basename "${0}")"
-REF_BASE_DIR_PATH="$(cd -- "$(dirname -- "${0}")" ; pwd)"
-#REF_INIT_DIR_PATH="${REF_BASE_DIR_PATH}/../ext"
+REF_BASE_DIR_PATH="$(dirname "$(realpath "${0}")")"
+#REF_INIT_DIR_PATH="$(realpath "${REF_BASE_DIR_PATH}/../ext")"
 #. "${REF_INIT_DIR_PATH}/init.sh"
 
 ##
