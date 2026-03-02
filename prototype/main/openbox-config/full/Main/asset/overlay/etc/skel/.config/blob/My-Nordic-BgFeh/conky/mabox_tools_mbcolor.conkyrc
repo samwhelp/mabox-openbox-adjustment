@@ -4,7 +4,7 @@ conky.config = {
 	own_window_type = 'desktop',
 	own_window_transparent = true,
 	own_window_hints = 'undecorated,below,skip_taskbar,skip_pager,sticky',
-	own_window_colour = '#142814',
+	own_window_colour = '#2E3440',
 	own_window_class = 'Conky',
 	own_window_title = 'Mabox Tools Conky',
     
@@ -25,18 +25,19 @@ conky.config = {
 	draw_outline = false,
 	default_outline_color = '#222222',
 
-	default_color = '#5E7EA5',
-	color0 = '#E0D3A4',
+	default_color = '#4C566A',
+	color0 = '#B48EAD',
+    color1 = '#D8DEE9',
 
 -- BORDERS
-	draw_borders = false,
+	draw_borders = true,
 -- Stippled borders?
 	stippled_borders = 0,
 -- border margins
-	border_inner_margin = 8,
-	border_outer_margin = 8,
+	border_inner_margin = 14,
+	border_outer_margin = 2,
 -- border width
-	border_width = 1,
+	border_width = 4,
 
 -- MISC
 -- Boolean value, if true, Conky will be forked to background when started.
@@ -62,25 +63,25 @@ conky.config = {
 };
 
 conky.text = [[
-${color}MENUS/SIDEPANELS ${color0} ${hr 1}${voffset -2}
-${color0}Main menu  ${alignr}${color}super / super+spacebar
-${color0}Settings menu ${alignr} ${color}super+s
-${color0}Left ${alignr} ${color}ctrl+super+left
-${color0}Right ${alignr} ${color}ctrl+super+right
-${color0}Places ${alignr} ${color}super+.
-${color}CONFIG MENUS ${color0} ${hr 1}${voffset -2}
-${color0}Tint2 ${alignr}${color}super+alt+p
-${color0}Conky ${alignr}${color}super+alt+k
-${color0}Menu/Panels  ${alignr}${color}super+alt+m
-${color0}Wallpaper ${alignr}${color}super+alt+w
-${color0}ScreenLocker ${alignr}${color}super+alt+l
-${color}Mabox Linux Tools ${color0} ${hr 1}${voffset -2}
-${color0}Command Palette  ${alignr}${color}super+F1
-${color0}Colorizer  ${alignr}${color}super+alt+o
-${color0}Color Menu  ${alignr}${color}super+alt+c
-${color0}Espanso - text expander ${alignr}${color}super+alt+e
-${color0}Exit dialog ${alignr}${color}super+x
-${color0}Screenshot tool ${alignr}${color}super+PrtScr
+${color1}MENUS/SIDEPANELS ${color0} ${hr 1}${voffset -2}
+${color0}Main menu  ${alignr}${color1}super / super+spacebar
+${color0}Settings menu ${alignr} ${color1}super+s
+${color0}Left ${alignr} ${color1}ctrl+super+left
+${color0}Right ${alignr} ${color1}ctrl+super+right
+${color0}Places ${alignr} ${color1}super+.
+${color1}CONFIG MENUS ${color0} ${hr 1}${voffset -2}
+${color0}Tint2 ${alignr}${color1}super+alt+p
+${color0}Conky ${alignr}${color1}super+alt+k
+${color0}Menu/Panels  ${alignr}${color1}super+alt+m
+${color0}Wallpaper ${alignr}${color1}super+alt+w
+${color0}ScreenLocker ${alignr}${color1}super+alt+l
+${color1}Mabox Linux Tools ${color0} ${hr 1}${voffset -2}
+${color0}Command Palette  ${alignr}${color1}super+F1
+${color0}Colorizer  ${alignr}${color1}super+alt+o
+${color0}Color Menu  ${alignr}${color1}super+alt+c
+${color0}Espanso - text expander ${alignr}${color1}super+alt+e
+${color0}Exit dialog ${alignr}${color1}super+x
+${color0}Screenshot tool ${alignr}${color1}super+PrtScr
 ]];
 
 

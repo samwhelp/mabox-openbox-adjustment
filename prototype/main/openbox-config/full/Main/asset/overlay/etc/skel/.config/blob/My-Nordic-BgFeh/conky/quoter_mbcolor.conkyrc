@@ -4,13 +4,13 @@ conky.config = {
 	own_window_type = 'desktop',
 	own_window_transparent = true,
 	own_window_hints = 'undecorated,below,skip_taskbar,skip_pager,sticky',
-	own_window_colour = '#060c09',
+	own_window_colour = '#2E3440',
 	own_window_class = 'Conky',
 	own_window_title = 'Mabox Tools Conky',
     
-    alignment = 'bottom_right',
-	gap_x = 30,
-	gap_y = 60,
+    alignment = 'top_middle',
+	gap_x = 0,
+	gap_y = 200,
 	minimum_width = '200',
 
 -- FONTS
@@ -25,18 +25,19 @@ conky.config = {
 	draw_outline = false,
 	default_outline_color = '#222222',
 
-	default_color = '#5E7EA5',
-	color0 = '#E0D3A4',
+	default_color = '#4C566A',
+	color0 = '#B48EAD',
+    color1 = '#D8DEE9',
 
 -- BORDERS
-	draw_borders = false,
+	draw_borders = true,
 -- Stippled borders?
 	stippled_borders = 0,
 -- border margins
-	border_inner_margin = 8,
-	border_outer_margin = 8,
+	border_inner_margin = 14,
+	border_outer_margin = 2,
 -- border width
-	border_width = 1,
+	border_width = 4,
 
 -- MISC
 -- Boolean value, if true, Conky will be forked to background when started.
