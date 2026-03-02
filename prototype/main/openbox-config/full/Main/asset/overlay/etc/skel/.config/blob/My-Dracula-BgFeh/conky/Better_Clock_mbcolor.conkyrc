@@ -4,40 +4,38 @@ conky.config = {
 	own_window_type = 'desktop',
 	own_window_transparent = true,
 	own_window_hints = 'undecorated,below,skip_taskbar,skip_pager,sticky',
-	own_window_colour = '#2a2c39',
-	own_window_class = 'Conky',
-	own_window_title = 'Mabox Simple Clock and Date',
+	own_window_class = 'Conky-nobg',
+	own_window_title = 'Mabox Better Clock',
     
-    alignment = 'bottom_middle',
+    alignment = 'top_middle',
 	gap_x = 0,
 	gap_y = 60,
 	
 -- FONTS
 	use_xft = true,
-	font = 'Ubuntu:size=8',
 	xftalpha = 1,
 	override_utf8_locale = true,
 
 -- COLORS
 	draw_shades = false,
-	default_shade_color = '#000000',
+	default_shade_color = '#333333',
 	draw_outline = false,
-	default_outline_color = '#222222',
+	default_outline_color = '#333333',
 
-	default_color = '#a380d7',
-	color0 = '#80849f',
-    color1 = '#7c809c',
+-- time color
+    color8 = '#e4e4e4',
+--date color
+    color9 = '#3cd425',
 
--- BORDERS
-	draw_borders = false,
--- Stippled borders?
-	stippled_borders = 0,
--- border margins
-	border_inner_margin = 8,
-	border_outer_margin = 8,
--- border width
-	border_width = 1,
     short_units = true,
+    
+    template0 = [[%H:%M]],
+    template1 = [[%A, %B %d]],
+    template2 = [[Noto Sans]],
+    template3 = [[Ubuntu]],
+    template4 = [[64]],
+    template5 = [[32]],
+    template6 = [[16]],
 
 -- MISC
 -- Boolean value, if true, Conky will be forked to background when started.
@@ -59,15 +57,12 @@ conky.config = {
 -- It is highly recommended to use own window with this one
 -- so double buffer won't be so big.
 	double_buffer = true,
-	update_interval = 2,
+	update_interval = 1,
+-- #${voffset -4}${if_existing .config/conky/menuscripts/.hline}${hr 2}${endif}
 };
 
 conky.text = [[
-${voffset -10}${color0}${font Cantarell:pixelsize=120}${time %H:%M}${font}${voffset -84}${offset 10}${color1}${font Cantarell:pixelsize=42}${time %d} ${voffset -15}${color0}${font Cantarell:pixelsize=22}${time  %B} ${time %Y}${font}${voffset 24}${font Cantarell:pixelsize=58}${offset -148}${time %A}${font}
-${voffset 10}${offset 12}${font Cantarell:pixelsize=14}${color1}HD ${offset 9}$color${fs_free /} / ${fs_size /}${offset 30}${color1}RAM ${offset 9}$color$mem / $memmax${offset 30}${color1}CPU ${offset 9}$color${cpu cpu0}%
-
-
-
+${alignc}${font ${template2}:size=${template4}:bold}${color8}${time ${template0}}${if_existing .config/conky/menuscripts/.seconds}${voffset -${template5}}${font ${template2}:size=${template5}}${time %S}${voffset ${template5}}${endif}${font}${color9}
+${if_existing .config/conky/menuscripts/.date}${alignr}${font ${template3}:size=${template6}:bold}${time ${template1}}${endif}
 ]];
-
 

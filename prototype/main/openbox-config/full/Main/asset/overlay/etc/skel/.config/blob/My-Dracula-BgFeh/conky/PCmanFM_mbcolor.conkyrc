@@ -6,12 +6,12 @@ conky.config = {
 	own_window_hints = 'undecorated,below,skip_taskbar,skip_pager,sticky',
 	own_window_colour = '#282936',
 	own_window_class = 'Conky',
-	own_window_title = 'Mabox Tools Conky',
+	own_window_title = 'PCManFM Help Conky',
     
-    alignment = 'bottom_left',
-	gap_x = 240,
+    alignment = 'top_left',
+	gap_x = 30,
 	gap_y = 60,
-	minimum_width = '200',
+	minimum_width = 200,
 
 -- FONTS
 	use_xft = true,
@@ -28,6 +28,7 @@ conky.config = {
 	default_color = '#404357',
 	color0 = '#e9e9f4',
     color1 = '#ea51b2',
+
 
 -- BORDERS
 	draw_borders = true,
@@ -59,29 +60,33 @@ conky.config = {
 -- It is highly recommended to use own window with this one
 -- so double buffer won't be so big.
 	double_buffer = true,
-	update_interval = 2,
+	update_interval = 1,
 };
 
 conky.text = [[
-${color1}MENUS/SIDEPANELS ${color0} ${hr 1}${voffset -2}
-${color0}Main menu  ${alignr}${color1}super / super+spacebar
-${color0}Settings menu ${alignr} ${color1}super+s
-${color0}Left ${alignr} ${color1}ctrl+super+left
-${color0}Right ${alignr} ${color1}ctrl+super+right
-${color0}Places ${alignr} ${color1}super+.
-${color1}CONFIG MENUS ${color0} ${hr 1}${voffset -2}
-${color0}Tint2 ${alignr}${color1}super+alt+p
-${color0}Conky ${alignr}${color1}super+alt+k
-${color0}Menu/Panels  ${alignr}${color1}super+alt+m
-${color0}Wallpaper ${alignr}${color1}super+alt+w
-${color0}ScreenLocker ${alignr}${color1}super+alt+l
-${color1}Mabox Linux Tools ${color0} ${hr 1}${voffset -2}
-${color0}Command Palette  ${alignr}${color1}super+F1
-${color0}Colorizer  ${alignr}${color1}super+alt+o
-${color0}Color Menu  ${alignr}${color1}super+alt+c
-${color0}Espanso - text expander ${alignr}${color1}super+alt+e
-${color0}Exit dialog ${alignr}${color1}super+x
-${color0}Screenshot tool ${alignr}${color1}super+PrtScr
+${color1}PCmanFM - file manager ${alignr}${color0}super+f
+${color1}VIEW ${color0}${hr 1}${voffset -2}
+${color0}Icon View  ${alignr}${color1}ctrl+1
+${color0}Compact View  ${alignr}${color1}ctrl+2
+${color0}Thumbnail View  ${alignr}${color1}ctrl+3
+${color0}Detailed List View  ${alignr}${color1}ctrl+4
+${color0}Show Hidden ${alignr}${color1}ctrl+H
+${color1}GO  ${color0}${hr 1}
+${voffset -2}${color0}Home Dir${alignr}${color1}alt+Home
+${color0}Parent Dir  ${alignr}${color1}alt+Up
+${color0}Previous Dir  ${alignr}${color1}alt+Left
+${color0}Next Dir  ${alignr}${color1}alt+Right
+${color0}Go to Location  ${alignr}${color1}ctrl+L
+${color0}SSH/FTP connect...  ${alignr}${color1}alt+G  C
+${color1}WINDOW  ${color0}${hr 1}
+${voffset -2}${color0}Refresh ${alignr}${color1}F5
+${color0}Dual Pane Mode ${alignr}${color1}F3
+${color0}Status Bar${alignr}${color1}ctrl+B
+${color0}Side Pane ${alignr}${color1}F9
+${color0}---> Places${alignr}${color1}ctrl+6
+${color0}---> Directory Tree ${alignr}${color1}ctrl+7
+${color1}SIZE ${color0}${hr 1}${voffset -2}
+${color0}Zoom In${alignr}${alignr}${color1}ctrl++
+${color0}Zoon Out ${alignr}${color1}ctrl+-
+${color0}Normal Size ${alignr}${color1}ctrl+0
 ]];
-
-

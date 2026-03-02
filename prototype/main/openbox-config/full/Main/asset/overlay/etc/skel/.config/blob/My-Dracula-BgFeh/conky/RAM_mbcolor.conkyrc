@@ -4,13 +4,13 @@ conky.config = {
 	own_window_type = 'desktop',
 	own_window_transparent = true,
 	own_window_hints = 'undecorated,below,skip_taskbar,skip_pager,sticky',
-	own_window_colour = '#2a2c39',
+	own_window_colour = '#282936',
 	own_window_class = 'Conky',
 	own_window_title = 'Mabox RAM Conky',
     
-    alignment = 'top_right',
-	gap_x = 30,
-	gap_y = 420,
+    alignment = 'bottom_left',
+	gap_x = 690,
+	gap_y = 60,
     minimum_height = 64,
     minimum_width = 64,
     	
@@ -26,19 +26,20 @@ conky.config = {
 	draw_outline = false,
 	default_outline_color = '#222222',
 
-	default_color = '#a380d7',
-	color0 = '#80849f',
-    color2 = '#8a8ea8',
+	default_color = '#404357',
+	color0 = '#e9e9f4',
+    color1 = '#ea51b2',
+    color2 = '#ebff87',
 
 -- BORDERS
-	draw_borders = false,
+	draw_borders = true,
 -- Stippled borders?
 	stippled_borders = 0,
 -- border margins
-	border_inner_margin = 8,
-	border_outer_margin = 8,
+	border_inner_margin = 13,
+	border_outer_margin = 3,
 -- border width
-	border_width = 1,
+	border_width = 6,
 -- graph borders
     draw_graph_borders = true,
 
@@ -68,13 +69,13 @@ conky.config = {
 };
 
 conky.text = [[
-${color}RAM${alignr 4}$legacymem / $memmax
-$color2$alignr${memgraph 50,190 -t}${voffset -6}
-$color0${top_mem name 1}$alignr$color${top_mem mem_res 1}
-$color0${top_mem name 2}$alignr$color${top_mem mem_res 2}
-$color0${top_mem name 3}$alignr$color${top_mem mem_res 3}
-$color0${top_mem name 4}$alignr$color${top_mem mem_res 4}
-$color0${top_mem name 5}$alignr$color${top_mem mem_res 5}
+${color0}RAM${alignr 4}$legacymem / $memmax
+${color2}${alignr}${memgraph 50,190 -t}${voffset -6}
+${color0}${top_mem name 1}${alignr}${color1}${top_mem mem_res 1}
+${color0}${top_mem name 2}${alignr}${color1}${top_mem mem_res 2}
+${color0}${top_mem name 3}${alignr}${color1}${top_mem mem_res 3}
+${color0}${top_mem name 4}${alignr}${color1}${top_mem mem_res 4}
+${color0}${top_mem name 5}${alignr}${color1}${top_mem mem_res 5}
 ]];
 
 
