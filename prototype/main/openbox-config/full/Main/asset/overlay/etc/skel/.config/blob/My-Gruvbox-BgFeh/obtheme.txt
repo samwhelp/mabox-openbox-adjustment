@@ -1,5 +1,5 @@
   <theme>
-    <name>gruvbox-mabox</name>
+    <name>Mabox-gruvmox-dark-medium-yellow</name>
     <titleLayout>NLIMC</titleLayout>
     <!-- <titleLayout>NDSLIMC</titleLayout> //-->
     <!--
