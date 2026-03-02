@@ -64,6 +64,7 @@ h l
 
 
 	<!-- alt+[, alt+] //-->
+	<!--
 	<keybind key="A-bracketleft">
 		<action name="GoToDesktop">
 			<to>left</to>
@@ -73,69 +74,6 @@ h l
 	<keybind key="A-bracketright">
 		<action name="GoToDesktop">
 			<to>right</to>
-		</action>
-	</keybind>
-
-
-	<!-- For Simple [1-10] //-->
-	<!--
-	<keybind key="A-1">
-		<action name="GoToDesktop">
-			<to>1</to>
-		</action>
-	</keybind>
-
-	<keybind key="A-2">
-		<action name="GoToDesktop">
-			<to>2</to>
-		</action>
-	</keybind>
-
-	<keybind key="A-3">
-		<action name="GoToDesktop">
-			<to>3</to>
-		</action>
-	</keybind>
-
-	<keybind key="A-4">
-		<action name="GoToDesktop">
-			<to>4</to>
-		</action>
-	</keybind>
-
-	<keybind key="A-5">
-		<action name="GoToDesktop">
-			<to>5</to>
-		</action>
-	</keybind>
-
-	<keybind key="A-6">
-		<action name="GoToDesktop">
-			<to>6</to>
-		</action>
-	</keybind>
-
-	<keybind key="A-7">
-		<action name="GoToDesktop">
-			<to>7</to>
-		</action>
-	</keybind>
-
-	<keybind key="A-8">
-		<action name="GoToDesktop">
-			<to>8</to>
-		</action>
-	</keybind>
-
-	<keybind key="A-9">
-		<action name="GoToDesktop">
-			<to>9</to>
-		</action>
-	</keybind>
-
-	<keybind key="A-0">
-		<action name="GoToDesktop">
-			<to>10</to>
 		</action>
 	</keybind>
 	//-->
@@ -196,11 +134,131 @@ h l
 		</action>
 	</keybind>
 
-	<keybind key="A-C-0">
+
+<?php
+/*
+	<!-- For [1-10] //-->
+	<keybind key="W-C-1">
+		<action name="GoToDesktop">
+			<to>1</to>
+		</action>
+	</keybind>
+
+	<keybind key="W-C-2">
+		<action name="GoToDesktop">
+			<to>2</to>
+		</action>
+	</keybind>
+
+	<keybind key="W-C-3">
+		<action name="GoToDesktop">
+			<to>3</to>
+		</action>
+	</keybind>
+
+	<keybind key="W-C-4">
+		<action name="GoToDesktop">
+			<to>4</to>
+		</action>
+	</keybind>
+
+	<keybind key="W-C-5">
+		<action name="GoToDesktop">
+			<to>5</to>
+		</action>
+	</keybind>
+
+	<keybind key="W-C-6">
+		<action name="GoToDesktop">
+			<to>6</to>
+		</action>
+	</keybind>
+
+	<keybind key="W-C-7">
+		<action name="GoToDesktop">
+			<to>7</to>
+		</action>
+	</keybind>
+
+	<keybind key="W-C-8">
+		<action name="GoToDesktop">
+			<to>8</to>
+		</action>
+	</keybind>
+
+	<keybind key="W-C-9">
+		<action name="GoToDesktop">
+			<to>9</to>
+		</action>
+	</keybind>
+*/
+?>
+
+
+<?php
+/*
+	<!-- For [1-10] //-->
+	<keybind key="A-1">
+		<action name="GoToDesktop">
+			<to>1</to>
+		</action>
+	</keybind>
+
+	<keybind key="A-2">
+		<action name="GoToDesktop">
+			<to>2</to>
+		</action>
+	</keybind>
+
+	<keybind key="A-3">
+		<action name="GoToDesktop">
+			<to>3</to>
+		</action>
+	</keybind>
+
+	<keybind key="A-4">
+		<action name="GoToDesktop">
+			<to>4</to>
+		</action>
+	</keybind>
+
+	<keybind key="A-5">
+		<action name="GoToDesktop">
+			<to>5</to>
+		</action>
+	</keybind>
+
+	<keybind key="A-6">
+		<action name="GoToDesktop">
+			<to>6</to>
+		</action>
+	</keybind>
+
+	<keybind key="A-7">
+		<action name="GoToDesktop">
+			<to>7</to>
+		</action>
+	</keybind>
+
+	<keybind key="A-8">
+		<action name="GoToDesktop">
+			<to>8</to>
+		</action>
+	</keybind>
+
+	<keybind key="A-9">
+		<action name="GoToDesktop">
+			<to>9</to>
+		</action>
+	</keybind>
+
+	<keybind key="A-0">
 		<action name="GoToDesktop">
 			<to>10</to>
 		</action>
 	</keybind>
+*/
+?>
 
 
 <?php
